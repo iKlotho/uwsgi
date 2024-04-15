@@ -1100,6 +1100,7 @@ class uConf(object):
         has_pcre = False
 
         required_pcre = self.get('pcre')
+        print("required pcre %s" % required_pcre)
         if required_pcre:
             pcre_libs = spcall('pcre2-config --libs8')
             if pcre_libs:
