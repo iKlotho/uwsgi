@@ -1113,7 +1113,7 @@ class uConf(object):
             pcre_libs = None
 
         if required_pcre:
-            if required_pcre != 'auto' and pcre_libs is None:
+            if required_pcre != 'auto' or pcre_libs is None:
                 print("*** libpcre headers unavailable. uWSGI build is interrupted. You have to install pcre development package or disable pcre")
                 sys.exit(1)
 
