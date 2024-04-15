@@ -1118,6 +1118,7 @@ class uConf(object):
                 sys.exit(1)
 
             self.libs.append(pcre_libs)
+            print("pcre flags %s" % pcre_cflags)
             self.cflags.append(pcre_cflags)
             self.gcc_list.append('core/regexp')
             self.cflags.append(pcre_define)
